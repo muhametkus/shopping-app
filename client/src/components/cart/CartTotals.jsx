@@ -12,7 +12,7 @@ const CartTotals = () => {
         Sepetteki Ürünler
       </h2>
       {/* urunler baslangic */}
-      <ul className="cart-items px-2 flex-col gap-y-3 py-2 overflow-y-auto ">
+      <ul className="cart-items px-2 flex flex-col gap-y-3 py-2 overflow-y-auto">
         <li className="cart-item flex justify-between">
           <div className="flex items-center gap-x-1">
             <img
@@ -32,7 +32,7 @@ const CartTotals = () => {
               className="w-full flex items-center justify-center !rounded-full"
               icon={<PlusCircleOutlined />}
             />
-            <span className="inline-block">1</span>
+            <span className="font-bold">1</span>
             <Button
               type="primary"
               size="small"
@@ -60,7 +60,7 @@ const CartTotals = () => {
               className="w-full flex items-center justify-center !rounded-full"
               icon={<PlusCircleOutlined />}
             />
-            <span className="inline-block">1</span>
+            <span className="font-bold">1</span>
             <Button
               type="primary"
               size="small"
@@ -89,7 +89,7 @@ const CartTotals = () => {
               className="w-full flex items-center justify-center !rounded-full"
               icon={<PlusCircleOutlined />}
             />
-            <span className="inline-block">1</span>
+            <span className="font-bold">1</span>
             <Button
               type="primary"
               size="small"
@@ -117,7 +117,7 @@ const CartTotals = () => {
               className="w-full flex items-center justify-center !rounded-full"
               icon={<PlusCircleOutlined />}
             />
-            <span className="inline-block">1</span>
+            <span className="font-bold">1</span>
             <Button
               type="primary"
               size="small"
@@ -145,7 +145,7 @@ const CartTotals = () => {
               className="w-full flex items-center justify-center !rounded-full"
               icon={<PlusCircleOutlined />}
             />
-            <span className="inline-block">1</span>
+            <span className="font-bold">1</span>
             <Button
               type="primary"
               size="small"
@@ -173,7 +173,7 @@ const CartTotals = () => {
               className="w-full flex items-center justify-center !rounded-full"
               icon={<PlusCircleOutlined />}
             />
-            <span className="inline-block">1</span>
+            <span className="font-bold">1</span>
             <Button
               type="primary"
               size="small"
