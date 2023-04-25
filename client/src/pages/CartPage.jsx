@@ -1,8 +1,10 @@
 import Header from "../components/header/Header";
-import React from "react";
-import { Button, Card, Table } from "antd";
+import React, { useState } from "react";
+import { Button, Card, Modal, Table } from "antd";
+import CreateBill from "./CreateBill";
 
 const CartPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const dataSource = [
     {
       key: "1",
@@ -60,12 +62,19 @@ const CartPage = () => {
               <b>Toplam</b>
               <b>592.92₺</b>
             </div>
-            <Button className="mt-4 w-full" type="primary" size="large">
+            <Button
+              className="mt-4 w-full"
+              type="primary"
+              size="large"
+              onClick={() => setIsModalOpen(true)}
+            >
               Sipariş Oluştur
             </Button>
           </Card>
         </div>
       </div>
+
+      <CreateBill isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
     </>
   );
 };
