@@ -1,4 +1,4 @@
-import { Button, Card, Form, Input, Modal, Select } from "antd";
+import { Modal} from "antd";
 
 const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
   const onFinish = (values) => {
@@ -13,7 +13,15 @@ const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
         footer={false}
         onCancel={() => setIsModalOpen(false)}
       >
-        Fatura
+        <section className="py-20 bg-black">
+          <div className="max-w-5xl mx-auto bg-white px-6">
+            <article className="overflow-hidden">
+                  <div className="logo my-6">
+                    <h2 className="text-4xl font-bold text-slate-700">LOGO</h2>
+                  </div>
+            </article>
+          </div>
+        </section>
       </Modal>
     </>
   );
